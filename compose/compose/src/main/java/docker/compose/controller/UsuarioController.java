@@ -16,9 +16,8 @@ public class UsuarioController {
     private UsuarioService usuarioService;
     @GetMapping("/home")
     public String homeBoasVindas() {
-        return "Boas vindas ao site de PR! \nCadastre aqui seu PR";
+        return "[frontend] Boas vindas ao site de PR! \n [Cadastre aqui seu PR] \n [Lista de Usuarios]";
     }
-
     @GetMapping("/usuarios")
     public ResponseEntity<List<Usuario>> getAll() {
         return ResponseEntity.ok(usuarioService.todosUsuarios());

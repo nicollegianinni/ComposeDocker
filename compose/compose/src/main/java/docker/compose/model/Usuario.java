@@ -13,6 +13,9 @@ public class Usuario {
     private String name;
     private double PR;
 
+    public Usuario() {
+    }
+
     public Usuario(String name, double PR) {
         this.name = name;
         this.PR = PR;

@@ -13,6 +13,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
+    //add try catch para passar mensagem de usuario igual nao permite cadastrar 2 x
     public Usuario cadastrarUsuario(String name, double pr) {
         Usuario usuario = new Usuario(name, pr);
         return usuarioRepository.save(usuario);
