@@ -3,6 +3,7 @@ package docker.compose.model;
 import java.util.Objects;
 
 public class Usuario {
+
     private String name;
     private double PR;
 
