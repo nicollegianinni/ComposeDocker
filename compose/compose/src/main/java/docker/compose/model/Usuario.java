@@ -1,9 +1,15 @@
 package docker.compose.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.util.Objects;
 
+@Entity(name = "usuario")
 public class Usuario {
 
+    @Id
     private String name;
     private double PR;
 
